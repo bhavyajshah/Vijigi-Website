@@ -1,0 +1,29 @@
+.footer {
+    background-color: #2E3E5C;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.footer-text {
+    color: #CBCFD6;
+}
+
+.footer-link {
+    color: #CBCFD6;
+}
+
+.social-media-icon {
+    display: inline-block;
+    color: #CBCFD6;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    background-color: #2E3E5C;
+    color: #CBCFD6;
+}

@@ -1,0 +1,93 @@
+.mission-section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.mission-image {
+  width: 100%;
+}
+
+
+.mission-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.mission-description {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .mission-section {
+    padding: 60px 0;
+  }
+
+  .mission-title {
+    font-size: 36px;
+  }
+
+  .mission-description {
+    font-size: 18px;
+  }
+}
+
+.app-quote {
+  padding: 10px 25px;
+  color: #000;
+  background-repeat: no-repeat;
+  background-size: 92px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffcd5a' stroke-width='0' viewBox='0 0 24 24'%3E%3Cpath stroke='none' d='M20.309 17.708C22.196 15.66 22.006 13.03 22 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.89 2.89 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292zm-11.007 0C11.19 15.66 10.999 13.03 10.993 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.89 2.89 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292z'/%3E%3C/svg%3E");
+
+}
+
+.app-quote-text {
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-top: 37px;
+}
+
+.app-quote-author {
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  font-style: italic;
+  margin: 15px 0 0;
+}
+
+.tp-label-text {
+  background-color: #212529;
+  color: #fff;
+  padding: 7px;
+  transition: 300ms;
+  border-radius: 10px;
+}
+
+.app-tp-wrapper {
+  --tp-width: 250px;
+  --tp-bottom-space: 10px;
+  display: inline;
+  position: relative;
+
+}
+
+.app-tp-wrapper:hover .app-tp,
+.app-tp-wrapper:focus .app-tp {
+  display: block;
+}
+
+.app-tp-wrapper:focus {
+  outline: none;
+}
+
+.app-tp-wrapper:focus .tp-label-text {
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.65) inset;
+}

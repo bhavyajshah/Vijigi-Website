@@ -1,0 +1,184 @@
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form-container h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form-container .row {
+    margin-bottom: 20px;
+}
+
+.contact-form-container .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+
+.contact-form-container form {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.contact-form-container form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form-container form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-form-container form input[type="text"],
+.contact-form-container form input[type="email"],
+.contact-form-container form input[type="tel"],
+.contact-form-container form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form-container form textarea {
+    resize: vertical;
+}
+
+.contact-form-container form button[type="submit"] {
+    color: #fff;
+    background-color: #FFCD5A;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container form button[type="submit"]:hover {
+    background-color: #FFB100;
+}
+
+.contact-form-container .embed-responsive {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-form-container .card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container .card-body {
+    padding: 20px;
+    height: 100%;
+    width: 300px;
+}
+
+.contact-form-container .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-form-container .card-text {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.contact-form-container .d-flex {
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.contact-form-container .text-dark {
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-form-container .text-dark:hover {
+    color: #FFB100;
+}
+
+.custom-card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+}
+
+.custom-card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+}
