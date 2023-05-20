@@ -7,10 +7,10 @@ import Integration2 from '../../assets/process_technology.png';
 import Integration3 from '../../assets/technology_works.png';
 import News1 from '../../assets/news1.webp';
 import News2 from '../../assets/news2.webp';
-import TwoW from '../../assets/2Wbike.jpg';
-import ThreeW from '../../assets/3W.png';
+import TwoW from '../../assets/bike.png';
+import ThreeW from '../../assets/auto.png';
 import Cars from '../../assets/cars.png';
-import CommercialVehicles from '../../assets/commercial_vehicles.svg';
+import CommercialVehicles from '../../assets/truck.png';
 import './TechnologyPage.css';
 
 SwiperCore.use([Navigation, Pagination]);

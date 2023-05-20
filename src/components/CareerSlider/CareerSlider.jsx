@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import CareerJobListing from '../CareerJobListing/CareerJobListing';
-// import CareerField from './CareerField';
 import Image1 from '../../assets/carousel-1.jpg';
 
 const CareerSlider = () => {
@@ -10,6 +9,7 @@ const CareerSlider = () => {
         setShowJobListing(true);
         window.history.pushState({ showJobListing: true }, '', '');
     };
+
 
     useEffect(() => {
         const handlePopState = (event) => {

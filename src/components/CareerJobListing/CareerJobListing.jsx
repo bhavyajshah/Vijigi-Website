@@ -1,21 +1,9 @@
 import React, { useState } from 'react';
-import Image1 from '../../assets/carousel-1.jpg';
-
-const jobData = [
-    {
-        companyLogo: Image1,
-        jobTitle: 'Hardware Engineer',
-        location: 'Ahmedabad, INDIA',
-        employmentType: 'Full Time',
-        dateLine: '10 May, 2023',
-        linkedinUrl: 'https://www.linkedin.com/jobs/view/3603174033/',
-    },
-];
+import jobData from '../../api/CareerJobData';
 
 const CareerJobListing = () => {
     const [keyword, setKeyword] = useState('');
     const [showAllJobs, setShowAllJobs] = useState(false);
-
     const filteredJobs = showAllJobs ? jobData : jobData.slice(0, 3);
 
     const handleBrowseMore = () => {
@@ -37,7 +25,7 @@ const CareerJobListing = () => {
                         <img
                             className="flex-shrink-0 img-fluid border rounded"
                             src={job.companyLogo}
-                            alt=""
+                            alt={job.alt}
                             style={{ width: '80px', height: '80px' }}
                         />
                         <div className="text-start ps-4">
@@ -68,13 +56,21 @@ const CareerJobListing = () => {
         ));
     };
 
+    const renderNoDataFound = () => {
+        return (
+            <div className="text-center">
+                <p>No data found</p>
+            </div>
+        );
+    };
+
     return (
-    <>
+        <>
             <div className="container-xxl">
                 <div className="container-fluid bg wow fadeIn" data-wow-delay="0.1s" style={{ padding: '35px', backgroundColor: '#FFCD5A' }}>
                     <div className="container">
                         <div className="row g-2">
-                            <div className="col-md-8">
+                            <div className="col-md-12">
                                 <input
                                     type="text"
                                     className="form-control border-0"
@@ -82,11 +78,6 @@ const CareerJobListing = () => {
                                     value={keyword}
                                     onChange={(e) => setKeyword(e.target.value)}
                                 />
-                            </div>
-                            <div className="col-md-4">
-                                <button className="btn btn-dark border-0 w-100" onClick={handleSearch}>
-                                    Search
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -100,7 +91,11 @@ const CareerJobListing = () => {
                             <div id="tab-1" className="tab-pane fade show p-0 active">
                                 {keyword !== '' ? (
                                     <>
-                                        {renderJobItems(handleSearch())}
+                                        {handleSearch().length > 0 ? (
+                                            renderJobItems(handleSearch())
+                                        ) : (
+                                            renderNoDataFound()
+                                        )}
                                         {jobData.length > 3 && !showAllJobs && (
                                             <button
                                                 className="btn py-3 px-5"
@@ -113,10 +108,14 @@ const CareerJobListing = () => {
                                     </>
                                 ) : (
                                     <>
-                                        {renderJobItems(filteredJobs)}
+                                        {filteredJobs.length > 0 ? (
+                                            renderJobItems(filteredJobs)
+                                        ) : (
+                                            renderNoDataFound()
+                                        )}
                                         {jobData.length > 3 && !showAllJobs && (
                                             <button
-                                                className="btn py-3 px-5"
+                                                className="btn py-3 px-5 mb-3"
                                                 style={{ background: '#FFCD5A' }}
                                                 onClick={handleBrowseMore}
                                             >

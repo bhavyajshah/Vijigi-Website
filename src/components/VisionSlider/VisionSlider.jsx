@@ -3,10 +3,9 @@ import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-// import "swiper/components/navigation/navigation.min.css";
 import "./VisionSlider.css";
 import { Link } from "react-router-dom";
-import DataSlider from "./DataSlider";
+import DataSlider from '../../api/DataSlider'
 
 // Initialize Swiper plugins
 SwiperCore.use([Autoplay, Navigation]);
@@ -19,6 +18,7 @@ const renderSlides = () => {
                     src={slide.bgImage}
                     alt={`Slider Image ${index + 1}`}
                     className="carousel-image"
+                    style={{height: "100vh"}}
                 />
                 <div className="neomorphism-card">
                     <div className="carousel-content">
@@ -58,7 +58,7 @@ const VisionSlider = () => {
                 spaceBetween={0}
                 slidesPerView={1}
                 loop
-                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
                 pagination={{ clickable: true }}
                 className="mySwiper"
                 onSwiper={(swiperInstance) => (swiperRef.current = swiperInstance)}

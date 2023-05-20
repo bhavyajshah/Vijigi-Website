@@ -1,6 +1,6 @@
-import bg1 from '../../assets/sliderimages.png';
-import bg2 from '../../assets/sliderimages.png';
-import bg3 from '../../assets/sliderimages.png';
+import bg1 from '../assets/sliderimages.png';
+import bg2 from '../assets/sliderimages.png';
+import bg3 from '../assets/sliderimages.png';
 
 const DataSlider = [
     {
